@@ -1,1 +1,4 @@
-<Solution />
+<Solution>
+  <Project Path="BasePOO/BasePOO.csproj" />
+  <Project Path="DesignPattern/DesignPattern.csproj" />
+</Solution>
