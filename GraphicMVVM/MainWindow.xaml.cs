@@ -16,9 +16,16 @@ namespace GraphicMVVM
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ViewModel _viewModel;
         public MainWindow()
         {
             InitializeComponent();
+            _viewModel = new ViewModel();
+            this.DataContext = _viewModel;
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.ConvertToUpper();
         }
     }
 }
