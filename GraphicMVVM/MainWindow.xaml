@@ -1,0 +1,18 @@
+﻿<Window x:Class="MonAppli.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Convertisseur MVVM" Height="200" Width="400">
+    <StackPanel Margin="20">
+        <Label Content="Texte à convertir :"/>
+
+        <TextBox
+                 Height="30" Margin="0,0,0,10"/>
+        
+        <Button Content="Convertir" Click="Button_Click" Height="30" Margin="0,0,0,10"/>
+
+        <Label Content="Texte converti :"/>
+
+        <TextBlock Text="{Binding ConvertedText, Mode=Oneway}"
+                   FontWeight="Bold" FontSize="16" Foreground="Green"/>
+    </StackPanel>
+</Window>

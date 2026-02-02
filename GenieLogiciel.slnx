@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="BasePOO/BasePOO.csproj" />
   <Project Path="ConsoleMVVM/ConsoleMVVM.csproj" Id="f4218d3d-a651-4081-a6ec-a6ce1c41ebca" />
+  <Project Path="GraphicMVVM/GraphicMVVM.csproj" Id="a0a85c21-b23f-4336-9df5-971046ee273e" />
 </Solution>
