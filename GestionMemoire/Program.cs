@@ -8,10 +8,12 @@ namespace GestionMemoire
     {
         static void Main(string[] args)
         {
-            DelegateExercise delegateExercise = new DelegateExercise();
-            delegateExercise.Run();
-            Lambda lambda = new Lambda();
-            lambda.PrintSquare(5);
+            //DelegateExercise delegateExercise = new DelegateExercise();
+            //delegateExercise.Run();
+            //Lambda lambda = new Lambda();
+            //lambda.PrintSquare(5);
+            LambdaThread lambdaThread = new LambdaThread();
+            lambdaThread.Run();
         }
     }
 }
