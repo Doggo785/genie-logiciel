@@ -6,7 +6,7 @@ namespace GestionMemoire
     delegate int DELG2(int v);
     class LambdaThread
     {
-        static void Run() {
+        public static void Run() {
             {
                 DELG2 d = x =>
                 {
