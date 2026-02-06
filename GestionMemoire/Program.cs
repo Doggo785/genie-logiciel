@@ -16,8 +16,13 @@ namespace GestionMemoire
             //lambdaThread.Run();
             //CompleteDelegate completeDelegate = new CompleteDelegate();
             //completeDelegate.Run();
-            HeapStack stack = new HeapStack();
-            HeapStack.Run();
+            //HeapStack stack = new HeapStack();
+            //HeapStack.Run();
+
+            using (DatabaseConnection connection = new DatabaseConnection())
+            {
+                connection.ExecuteQuery("SELECT * FROM Users");
+            }
         }
     }
 }
