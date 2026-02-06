@@ -14,8 +14,10 @@ namespace GestionMemoire
             //lambda.PrintSquare(5);
             //LambdaThread lambdaThread = new LambdaThread();
             //lambdaThread.Run();
-            CompleteDelegate completeDelegate = new CompleteDelegate();
-            completeDelegate.Run();
+            //CompleteDelegate completeDelegate = new CompleteDelegate();
+            //completeDelegate.Run();
+            HeapStack stack = new HeapStack();
+            HeapStack.Run();
         }
     }
 }
