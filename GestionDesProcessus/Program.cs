@@ -5,32 +5,33 @@ namespace GestionDesProcessus;
 
 class Program
 {
+    static void ProcessExitHandler(object? sender, EventArgs e)
+    {
+        Console.WriteLine("Le processus est terminé.");
+    }
+
     static void Main(string[] args)
     {
-        //LancerProcessus("notepad.exe");
-        //LancerProcessus("explorer.exe");
-        Process processus = new Process();
-        processus.StartInfo.FileName = "explorer.exe";
-        processus.StartInfo.Arguments = @"C:\Windows";
-        processus.Start();
-        Thread.Sleep(2000);
-        processus.WaitForExit();
-
-        //Console.ReadKey();
+        LancerProcessus("explorer.exe", @"C:\Windows");
+        LancerProcessus("notepad.exe", @"C:\Windows\win.ini");
     }
-    static void LancerProcessus(string nomProcessus)
+    static void LancerProcessus(string nomProcessus, string param = "")
     {
         Process processus = new Process();
+        processus.EnableRaisingEvents = true;
+        processus.Exited += ProcessExitHandler;
         processus.StartInfo.FileName = nomProcessus;
-
+        processus.StartInfo.Arguments = param;
 
         try
         {
             bool Launched = processus.Start();
             if (Launched)
             {
-                Console.WriteLine($"Processus '{nomProcessus}' lancé avec succès.");
+                Console.WriteLine($"Processus pid : '{processus.Id}', '{nomProcessus}' lancé avec succès.");
+                Thread.Sleep(3000);
                 processus.WaitForExit();
+
             }
             else
             {
