@@ -25,9 +25,11 @@
         </DataGrid>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-            <Button Content="Rafraîchir" Click="BtnRefresh_Click" Margin="0,0,10,0" Padding="10,5"/>
             <Button Content="Arrêter processus" Click="BtnArreter_Click" Margin="0,0,10,0" Padding="10,5" Background="#FFCCCC" Foreground="DarkRed" FontWeight="Bold"/>
             <Button Content="Quitter application" Click="BtnQuitter_Click" Padding="10,5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
+            <Button Content="Rafraîchir" Click="BtnRefresh_Click" Margin="0,0,0,0" Padding="10,5"/>
         </StackPanel>
     </Grid>
 </Window>
