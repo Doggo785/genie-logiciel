@@ -5,4 +5,5 @@
   <Project Path="GestionDesProcessusWPF/GestionDesProcessusWPF.csproj" Id="8eca038a-fdf0-40f1-a27c-5a0662ef783b" />
   <Project Path="GestionMemoire/GestionMemoire.csproj" Id="49ae39ea-8695-4039-9fea-2335aac28f2c" />
   <Project Path="GraphicMVVM/GraphicMVVM.csproj" Id="a0a85c21-b23f-4336-9df5-971046ee273e" />
+  <Project Path="Philosophes/Philosophes.csproj" Id="84387e32-4c84-4f2f-9c5d-13113f21bf16" />
 </Solution>
