@@ -1,0 +1,13 @@
+services:
+  server-app:
+    image: ws-socket-server:latest
+    build:
+      context: ./
+      dockerfile: dockerfile
+    ports:
+      - "11000:11000"  # Port Host : Port Container
+    volumes:
+      - ./logs_data:/app/logs
+    restart: on-failure
+    environment:
+      - LOG_DIR=/app/logs
