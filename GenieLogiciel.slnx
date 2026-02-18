@@ -1,9 +1,12 @@
 <Solution>
   <Project Path="BasePOO/BasePOO.csproj" />
+  <Project Path="Client/Client.csproj" Id="f47a0c38-b787-4107-9e3e-68c7187f69fd" />
   <Project Path="ConsoleMVVM/ConsoleMVVM.csproj" Id="f4218d3d-a651-4081-a6ec-a6ce1c41ebca" />
   <Project Path="GestionDesProcessus/GestionDesProcessus.csproj" Id="d6a31820-7fdc-4a6b-b0f1-451c1bf0d5e2" />
   <Project Path="GestionDesProcessusWPF/GestionDesProcessusWPF.csproj" Id="8eca038a-fdf0-40f1-a27c-5a0662ef783b" />
   <Project Path="GestionMemoire/GestionMemoire.csproj" Id="49ae39ea-8695-4039-9fea-2335aac28f2c" />
   <Project Path="GraphicMVVM/GraphicMVVM.csproj" Id="a0a85c21-b23f-4336-9df5-971046ee273e" />
+  <Project Path="Multithread/Multithread.csproj" Id="18b4ce7f-cdbe-4d3b-8ba2-99cf17a3702b" />
   <Project Path="Philosophes/Philosophes.csproj" Id="84387e32-4c84-4f2f-9c5d-13113f21bf16" />
+  <Project Path="ServerSocket/ServerSocket.csproj" Id="fe94620c-fdd4-4ef9-8fb2-152af8622909" />
 </Solution>
